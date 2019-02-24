@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>input[type="text"]の横幅を入力された文字に合わせて可変にするサンプル</title>
+  <link rel="stylesheet" media="all" href="style.css">
+</head>
+<body>
+  <h1 class="headline">input[type="text"]の横幅を入力された文字に合わせて可変にするサンプル</h1>
+
+  <div class="input-text__wrapper">
+    <div class="input-text__item">
+      <div class="input-text__dummy js-dummy-input-text" data-placeholder="文字を入力してください"></div>
+      <input type="text" class="js-input-text input-text" placeholder="文字を入力してください">
+    </div>
+    <div class="input-text__separate">/</div>
+    <div class="input-text__item">
+      <div class="input-text__dummy js-dummy-input-text" data-placeholder="placeholder短い場合"></div>
+      <input type="text" class="input-text js-input-text" placeholder="placeholder短い場合">
+    </div>
+    <div class="input-text__separate">/</div>
+    <div class="input-text__item">
+      <div class="input-text__dummy js-dummy-input-text" data-placeholder="placeholder長〜〜〜〜〜〜〜〜〜〜〜〜〜い場合"></div>
+      <input type="text" class="js-input-text input-text" placeholder="placeholder長〜〜〜〜〜〜〜〜〜〜〜〜〜い場合">
+    </div>
+  </div>
+
+  <p>Repository: <a href="https://github.com/jamog3/input-width-to-variable">https://github.com/jamog3/input-width-to-variable</a></p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
